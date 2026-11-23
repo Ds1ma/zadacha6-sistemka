@@ -1,0 +1,12 @@
+    try { //код, где может возникнуть ошибка
+            Integer.parseInt(name); // если получилось — значит ввели число
+            System.out.println("Ожидалась строка, а не число!"); //вывод сообщения при исключении, то есть вводе числа
+        } catch (NumberFormatException e) { // обработчик исключения
+        }
+        catch (NumberFormatException e) { // обработчик исключения
+            System.out.println("Привет " + name); // сюда попадаем, если ввели строку
+        } finally {
+        }
+        finally {
+            scanner.close(); // закрытие, чтобы не было утечки данных
+        }
